@@ -1,4 +1,13 @@
+# Source: https://leetcode.com/problems/reverse-linked-list/description/
+# Difficulty: Easy
+# Topic: Arrays
+# Tags: tag1, tag2
+# Related Concepts: ..
+# Question: ..
+
+
 """
+
 Given a singly linked list, reverse the list. 
 
 Reverse can happen in 2 ways - either reverse the elements or reverse the links. 

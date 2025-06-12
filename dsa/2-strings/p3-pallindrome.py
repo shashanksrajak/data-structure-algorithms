@@ -1,6 +1,42 @@
+# Source: https://neetcode.io/problems/is-palindrome?list=blind75
+# Difficulty: Easy
+# Topic: Strings
+# Tags: tag1, tag2
+# Related Concepts: ..
+# Question: ..
+
+
 """
 Find pallindrome of a string. Also some string comparision.
 """
+
+
+class Solution:
+    """
+    this solution is for alphanumeric pallindrome
+    """
+
+    def isPalindrome(self, s: str) -> bool:
+        if not s:
+            return False
+
+        i, j = 0, len(s)-1
+
+        while i < j:
+            if not s[i].isalnum():
+                i += 1
+                continue
+            if not s[j].isalnum():
+                j -= 1
+                continue
+
+            if s[i].lower() != s[j].lower():
+                return False
+            else:
+                i += 1
+                j -= 1
+
+        return True
 
 
 def pallindrome(s):
@@ -38,7 +74,7 @@ def compare(s1, s2):
         return f"{s2} > {s1}"
 
 
-def compare_pythonic(s1, s2):
+def compare_pythonic(s1, s2):  # kjsdklajl
     if s1 == s2:
         return "Equal"
     elif s1 > s2:
@@ -52,6 +88,8 @@ if __name__ == "__main__":
     s2 = "Madam"
     s3 = "Madamw"
 
+    s1.isa
+
     print("Original String: ", s1)
 
     print("Is Pallindrome?", pallindrome(s1))
@@ -60,3 +98,5 @@ if __name__ == "__main__":
     print(compare(s3, s2))
 
     print(compare_pythonic(s3, s2))
+
+    print(ord('A'))

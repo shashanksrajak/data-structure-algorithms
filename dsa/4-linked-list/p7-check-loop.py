@@ -1,3 +1,12 @@
+# Source: https://neetcode.io/problems/linked-list-cycle-detection?list=blind75
+#
+# Difficulty: Easy
+# Topic: Arrays
+# Tags: tag1, tag2
+# Related Concepts: ..
+# Question: ..
+
+
 """
 Find loop in a linked list. FAQ in linked list.
 
@@ -8,6 +17,9 @@ class Node:
     def __init__(self, data):
         self.data = data
         self.next = None
+
+    def say_hello():
+        print("This is my first youtube coding video...")
 
 
 class LinkedList:
