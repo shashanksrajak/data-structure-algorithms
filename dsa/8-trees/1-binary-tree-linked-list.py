@@ -15,8 +15,6 @@ class Node:
         self.left_child = None
         self.right_child = None
 
-# class for Linked List
-
 
 class BinaryTree:
     def __init__(self, data):
